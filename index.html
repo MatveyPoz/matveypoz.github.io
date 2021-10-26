@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!--<link rel="stylesheet" href="css/normalize.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<!-- Add your site or application content here -->
+<section class="left">
+  <div id="leftHigh">
+    <script src="js/mouseHandler.js"></script>
+    RFID (англ. Radio Frequency IDentification, радиочастотная идентификация) — способ автоматической идентификации объектов, в котором посредством радиосигналов считываются или записываются данные, хранящиеся в так называемых транспондерах, или RFID-метках.
+    Любая RFID-система состоит из считывающего устройства (считыватель, ридер или интеррогатор) и транспондера (он же RFID-метка, иногда также применяется термин RFID-тег).
+  </div>
+  <div id="leftLow">
+    <button id="showTextButton" onclick="showList()">Show text area</button>
+    <textarea id="leftLowText" cols="50" rows="5" style="display: none"></textarea>
+    <button id="submitText" style="display: none" onclick="submitText()">Send</button>
+    <button id="deleteList" style="display: none" onclick="deleteText()">Delete</button>
+    <ul id="leftLowList"></ul>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  </div>
+</section>
+
+<section class="centre"></section>
+
+<section class="right">
+  <nav id="rightHigh">
+    <h2>MENU</h2>
+    <ul id="rightHighMenu">
+      <li>
+        RFID
+      </li>
+      <li>
+        <a href="2page.html">Mifare</a>
+      </li>
+      <li>
+        <a href="3page.html">EM-4100</a>
+      </li>
+      <li>
+        <a href="4page.html">FAQ</a>
+      </li>
+      <li>
+        <a href="5page.html">About</a>
+      </li>
+    </ul>
+  </nav>
+
+  <article id="rightMiddle">
+    <img src="img/2.jpg">
+    <form>
+      <input type="checkbox" id="leftAlignIsPermittedCheckbox" name="isLeftAlignPermitted" onclick="mouseHandler()">
+      Use text align
+      <br>
+      <div id="rightMiddleForm">
+        <input name="inputNumberForm" id="inputNumber" onchange="submitForm(); mouseHandler()">
+      </div>
+      <button type="submit" onclick="submitForm(); mouseHandler() ">Submit form</button>
+    </form>
+    <div id="rightMiddleDiv"></div>
+  </article>
+
+  <article id="rightLow">
+    <h2>Lorem ipsum</h2>
+    <div id = "rightLowDiv">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </div>
+
+  </article>
+</section>
+
+</body>
+
+<script src="js/main.js"></script>
+</html>
